@@ -6,7 +6,7 @@
   --color-background: #f4f4f4;
   --color-accent: #555555;
   --color-footer-background: #333333;
-  --color-footer-text: #fff;
+  --color-footer-text: #ffffff;
   --color-link: #4caf50;
 }
 
@@ -100,4 +100,15 @@ footer p {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-accent);
+    color: var(--color-footer-text);
+  }
+
+  section h3 {
+    color: var(--color-footer-text);
+  }
 }
